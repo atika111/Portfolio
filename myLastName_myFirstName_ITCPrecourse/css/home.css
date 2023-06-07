@@ -1,0 +1,186 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.nav-header {
+  border-bottom: 3px solid rgba(151, 146, 146, 0.363);
+}
+
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav-header ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.nav-header li {
+  margin: 0 1rem 0 0;
+  padding: 0;
+  background-color: #000000;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  min-height: 3rem;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.nav-header li:hover,
+.nav-header li:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.973);
+  background-color: #056c48;
+  font-size: 1rem;
+  font-weight: 600;
+  transform: translateY(-1px);
+}
+
+.nav-header li:active {
+  background-color: #f0f0f1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgb(0, 0, 0);
+  transform: translateY(0);
+}
+
+.nav-header a {
+  display: block;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  color: #f0f0f1;
+}
+
+.nav-header-item {
+  align-self: flex-end;
+  color: #3d6ded;
+}
+
+.card {
+  background-color: #9494942e;
+  border: 2px solid #68686830;
+  border-radius: 10px;
+  margin: 3.125em;
+  padding: 1.25rem 2rem 1.25rem 2rem;
+  overflow: auto;
+  overflow-x: hidden;
+  cursor: grab;
+}
+
+.profile-image {
+  float: left;
+  width: 50%;
+  border-radius: 10px;
+  margin: 0.5rem 1.5rem 0.5rem 0;
+}
+
+.clear-image::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.card h2::after {
+  content: "";
+  display: flex;
+  margin: 1.5rem 0 1.5rem 0;
+  width: 40%;
+  height: 5px;
+  background-color: #056c48;
+}
+
+.icon-cards {
+  width: 40%;
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+  margin-left: 15rem;
+}
+
+.icon-cards li {
+  font-size: 1.5rem;
+}
+
+footer {
+  background-color: #9494940f;
+  border-top: 3px solid rgba(151, 146, 146, 0.363);
+}
+
+footer p {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.nav-footer ul {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 3rem;
+  gap: 4.5rem;
+}
+
+.nav-footer a {
+  margin: 0 1rem 0 0;
+  padding: 0;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  min-height: 3rem;
+}

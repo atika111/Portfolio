@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <link href="/css/home.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-header sticky-nav">
+        <ul>
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="wrapper">
+      <section>
+        <div class="card">
+          <!-- Document.QuSelector cannot work with tow classes? spoused to be: profile-image & clear-image  -->
+          <img
+            id="profile-image"
+            src="/images/atika.jpg"
+            alt="atika's pic"
+            class="profile-image"
+          />
+          <h2 id="profile-name">I'AM</h2>
+          <span class="span-effect"></span>
+          <h3>Israel Tech Challenge Pre-Course</h3>
+          <ul class="icon-cards">
+            <!--Linkedin - problem with the url: 'Cannot Get...' -->
+            <li>
+              <a target="_blank" href="https://www.linkedin.com"
+                ><i class="fa-brands fa-linkedin" style="color: #000000"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://stackoverflow.com/users/21960530/atika-kalfa?tab=profile"
+                ><i
+                  class="fa-brands fa-stack-overflow"
+                  style="color: #000000"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://github.com/atika111"
+                ><i
+                  class="fa-brands fa-square-github"
+                  style="color: #000000"
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <nav class="nav-footer">
+          <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <p id="footer-text">This page was built using:</p>
+        <p>&#169; Israel Tech Challenge</p>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/popmotion@8.5.0/dist/popmotion.global.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/footer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/contact.css">
+    <title>Contact</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-header sticky-nav">
+        <ul>
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="wrapper">
+      <article>
+        <h3>CONTACT INFO</h3>
+        <h1>Get in Touch<span>.</span></h1>
+        <img
+          class="clear-img"
+          src="/images/atika's pic.jpg"
+          alt="Atika's pic"
+        />
+        <h3>Message</h3>
+        <h2>Write Me Something</h2>
+        <form
+          id="my-form"
+          method="POST"
+          action="https://formspree.io/f/mvonjbrb"
+        >
+          <div class="form-section">
+            <fieldset>
+              <label>
+                <input type="text" name="name" placeholder="Name" required />
+              </label>
+              <label>
+                <input
+                  type="text"
+                  name="E-mail"
+                  placeholder="E-mail"
+                  required
+                />
+              </label>
+              <label>
+                <input
+                  type="text"
+                  name="Subject"
+                  placeholder="Subject"
+                  required
+                />
+              </label>
+              <label>
+                <textarea
+                  name="textarea"
+                  cols="30"
+                  rows="10"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </label>
+              <label>
+                <select name="aboption" required>
+                  <option selected>
+                    Which one is the best time to contact you...?
+                  </option>
+                  <option value="">Morning</option>
+                  <option value="">Late morning</option>
+                  <option value="">Noon/ midday</option>
+                  <option value="">Afternoon</option>
+                </select>
+              </label>
+              <input
+                id="send_to"
+                type="hidden"
+                name="send_to"
+                value="yourEmailHere"
+              />
+              <button type="submit" id="submit-btn" disabled>
+                Send Message
+              </button>
+            </fieldset>
+          </div>
+        </form>
+      </article>
+    </main>
+    <footer>
+      <div>
+        <nav class="nav-footer">
+          <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <p id="footer-text">This page was built using:</p>
+        <p>&#169; Israel Tech Challenge</p>
+      </div>
+    </footer>
+    <script src="/js/contact.js"></script>
+    <script src="/js/footer.js"></script>
+  </body>
+</html>
